@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+
+        <title> CCG/signup </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css"> 
+        <script src="js/index.js"></script> 
+
+    </head>
+
+    <body>
+
+        <section class="container">
+
+            <div id="login"> 
+                
+                <h1> Crie sua conta! </h1>
+
+                <form id="form" action="javascript:send('php/send_signup.php')">
+
+                    <input type="text" name="username" placeholder="Digite seu user"> 
+                    <br>
+                    <input type="password" name="senha" placeholder="Digite sua senha">
+                    <br>
+                    <p id="response"></p>
+                    <button name="submit" type="submit"> Criar </button>
+                
+                </form>
+                
+            </div>
+            
+            <img onclick="go_to(0)" src="https://crazycatgang.com.br/wp-content/uploads/2020/02/ALTA-Capa-Facebook2.png">
+            
+        </section>
+
+    </body>
+
+</html>

@@ -1,0 +1,396 @@
+/* Globais */
+body{ 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    margin: 0; 
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+div{ 
+    margin: 50px;
+}
+
+img{ 
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    transition: all 300ms ease;
+} 
+button{
+    cursor: pointer;
+    transition: all 500ms ease-out;
+}
+a{
+    transition: all 500ms ease-out;
+}
+
+input{ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px; 
+    border-bottom: 2px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 500ms ease;
+}
+
+#response{
+    color: black;
+    font-size: 12px;
+}
+
+
+/* index.html */
+.background{
+    background-image: url("../images/blackcat.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+#toolbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+    #search_block{
+        display:flex;
+        justify-content: center;
+        background-color: #ffda05e7;
+        border-radius: 10px;
+    }
+    #search{
+        font-weight: 600;
+        border-bottom: 0;
+        width: 50vw;   
+    }
+    #search:hover{
+        width: 51vw;
+    }
+
+    #block{
+        display: flex;
+    }
+    #block div{
+        background-color: #ffda05e7;
+        border-radius: 10px;
+        margin: 0 10px;
+        width: 100px;
+        padding: 5px;
+    }
+    #block img{
+        width: 20px;
+    }
+    #link_cab{
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+    }
+    #link_cab:hover{
+        font-size: 22px;
+        opacity: 40%;
+    }
+
+    #focus{
+        background-color: #000000d3;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    #focus img{
+        width: 200px;
+        border-radius: 50%;
+        border: 4px solid;
+    }
+    #bt{
+        font-size: 20px;
+        color: white;
+        display: inline-block;
+        border: 2px solid white;
+        margin: 40px;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    #bt:hover{
+        padding: 25px;
+        border-color: #ffda05e7;
+    }
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffda05e7;
+
+}
+    #about{
+        display: flex;
+        color: black;
+        font-weight: 700;
+        width: 70vw;
+        min-height: 60vh;
+        text-align: left;
+        font-size: 20px;
+    }
+
+#ctt{
+    color: white;
+}
+#social_logo{
+    width: 25px;
+}
+.ctt{
+    font-size: 25px;
+}
+
+
+/* login.html e signup.html */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container img{
+    width: 60%;
+}
+.container img:hover{
+    cursor: pointer;
+    width: 63%;
+    opacity: 60%; 
+}
+
+#login{
+    width: 60%;
+    border-radius: 10px;
+    background-color: #ffda05e7;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#login input{
+    width:75%;
+}
+#login button{
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    width: 10%;
+}
+#login button:hover{
+    padding: 15px;
+    width: 15%;
+}
+#login a{
+    color: yellow;
+    background-color: black;
+    width: 50%;
+    border-radius: 10px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+/* cabeçalho */
+.header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 50px;
+    border-bottom: solid 5px;
+}
+.header img{
+    cursor: pointer;
+    width: 5%;
+    border-radius: 100%;
+}
+.header img:hover{
+    opacity: 60%; 
+}
+.header h1{
+    margin-left: 40%;
+}
+
+/* adocao.html */
+.adote{
+    background-image: url("../images/adote.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#blocos_gatos{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    border-radius: 20px;
+    width: 400px;
+    text-align: left;
+}
+#blocos_gatos p{
+    font-size: 20px;
+}
+
+#blocos_gatos a{
+    background-color: #ffda05e7;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+#blocos_gatos a:hover{
+    padding: 10px;
+    opacity: 60%;
+}
+
+
+/* voluntariar.html */
+.questionario{
+    background-color: #ffda05e7;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;    
+}
+.questionario form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.questionario input{
+    width: 100%;
+}
+.questionario button{
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+.questionario button:hover{
+    padding: 20px 50px;
+}
+#email{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 944px){
+    .cab{
+        flex-direction: column;
+    }
+
+    .header img{
+        width: 20%;
+    }
+    .header h1{
+        margin-left: 20%;
+    }
+    
+    .questionario{
+        color: black;
+        background-color: #ffda05e7;
+        margin: 3px;
+        text-align: left;
+        padding: 40px;
+        font-size: 50px;    
+    }
+    .about{
+        width: 80%;
+        height: auto;
+        font-size: 20px;
+        margin: 50px;
+        padding: right 10px;
+        box-sizing: border-box;
+    }
+    .home{
+        flex-direction: column;
+    }
+    #bt{
+        margin: 20px;
+        padding: 5px 15px;
+        white-space: nowrap;
+    }
+    #bt:hover{
+        padding: 10px 20px;
+    }
+    #blocos_gatos{
+        background-color: rgba(0, 0, 0, 0.856);
+        color: white;
+        border-radius: 20px;
+        width: 90%;
+        text-align: left;
+        height: 50%;
+
+    }
+    p{
+        font-size: 30px;
+    }
+
+    #BotaoAdt{
+        color: yellow;
+        background-color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 2% 12%;
+        text-decoration: none;
+        align-items: center;
+    }
+    #BotaoAdt:hover{
+        padding: 2% 12%;
+    }
+    #login{
+        width: 75%;
+    }
+    #login button{
+        width: 20%;
+    }
+    #login button:hover{
+        width: 25%;
+    }
+
+    .container img{
+        width: 75%;
+    }
+    .container img:hover{
+        width: 80%;
+        opacity: 60%; 
+    }
+    
+    .questionario h2{
+        font-size: 25px;
+    }
+    .questionario h3{
+        font-size: 20px;
+    }
+    .questionario button{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .questionario button:hover{
+        width: 80%;
+    }
+}

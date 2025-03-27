@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+
+        <title> CCG/questionario </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css"> 
+        <script src="js/index.js"></script> 
+
+    </head>
+
+    <body>
+
+        <section class="header">
+            <img onclick="go_to(0)" src="images/logo.png">
+            <h1>Voluntários</h1>
+        </section>
+        
+        <section class="questionario">
+            
+            <p>Preencha os campos abaixo:</p>
+
+            <form id="form" action="javascript:send('php/send_volunt.php')">
+                
+                <input name="nome" type="text" placeholder="Nome completo">
+                
+                <input name="sobre" type="text" placeholder="Sobre mim">
+                
+                <input name="data_nasc" type="date" placeholder="dd-mm-yyyy">
+                
+                <input name="cpf" type="text" placeholder="CPF">
+                
+                <input name="sexo" type="text" placeholder="Sexo">
+
+                <input name="email" type="email" placeholder="Email">
+
+                <input name="telefone" type="tel" placeholder="Telefone">
+
+                <input name="cep" type="number" placeholder="CEP">
+
+                <input name="endereco" type="text" placeholder="Endereço">
+
+                <input name="numero" type="number" placeholder="Número"> 
+
+                <input name="complemento" type="text" placeholder="Complemento">
+
+                <input name="motivo" type="text" placeholder="Por que quer se voluntariar">
+
+                <input name="animais" type="text" placeholder="Possui animais? Se sim, quais?">
+                
+                <p id="response"></p>
+                <button name="submit" type="submit"> Salvar </button>
+            
+            </form>
+            
+            <h2>Doações:</h2>
+            <h3>As doacoes podem ser realizadas por pix: <br> <img id="social_logo" src="images/pix.png" > <a id="email" href="#">ccgcwb@gmail.com</a> </h3>
+        
+        </section>
+
+    </body>
+
+</html>
+
